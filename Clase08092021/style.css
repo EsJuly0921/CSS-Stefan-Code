@@ -1,0 +1,23 @@
+.pokeball{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(red 48.5%, black 48.5%, black 52.5%, white 52.5%); /*El segundo negro es para encubrir el gradiente del blanco y que rojo y blanco queden como colores solidos*/
+    border: 2px solid black;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: relative; /*Para que el elemento .circle tome sus instrucciones segun el elemento .pokeball*/
+}
+
+.circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 10px solid black;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

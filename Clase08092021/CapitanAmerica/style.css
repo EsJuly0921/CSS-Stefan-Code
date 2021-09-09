@@ -1,0 +1,71 @@
+#escudo{
+    border: 1px solid black;
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1{
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+}
+
+.circle2, .circle3, .circle4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.circle2{
+    width: 47vh;
+    height: 47vh;
+    border-radius: 50%;
+    background: white;
+}
+
+.circle3{
+    width: 34vh;
+    height: 34vh;
+    border-radius: 50%;
+    background: red;
+}
+
+.circle4{
+    width: 22vh;
+    height: 22vh;
+    border-radius: 50%;
+    background: blue;
+}
+
+.star:after, .star:before, .star{
+    width: 0;
+    border-color: transparent transparent white transparent;
+    border-width: 0 52px 42px 52px;
+    border-style: solid;
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 80px;
+    margin-left: 45px;
+}
+
+.star:before{
+    content: "";
+    margin-top: -1px;
+    margin-left: -53px;
+    transform: rotate(71deg);
+}
+
+.star:after{
+    content: "";
+    margin-top: -1px;
+    margin-left: -57px;
+    transform: rotate(-70deg);
+}
